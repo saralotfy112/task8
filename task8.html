@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1"></h1>
+    <h2 id="head2"></h2>
+    <p id="para1"></p>
+
+    <script> 
+        var name = prompt(" enter your name:");
+        var product = prompt(" enter the product name:");
+        var price = Number(prompt(" enter the product price:"));
+
+        var profitMargin = price * 1.1;
+        var Thesellingprice = profitMargin * 1.05;
+         
+        document.body.innerHTML = "<h1>" + name + "</h1>" +
+                                   "<h2>" + product + "</h2>" +
+                                   "<p>The selling price for the product is: " + Thesellingprice  + "</p>";
+
+    </script>
+</body>
+</html>
